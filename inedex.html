@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="weather-box" class="weather" style="display: none;">
+            <h2 id="city">London</h2>
+            <h1 id="temp">22°C</h1>
+            <p id="description">Clear Sky</p>
+        </div>
+        <p id="error" style="display: none; color: red;">City not found!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
