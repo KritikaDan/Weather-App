@@ -9,16 +9,33 @@
 <body>
     <div class="card">
         <div class="search">
-            <input type="text" id="city-input" placeholder="Enter city name">
-            <button id="search-btn">Search</button>
+            <input type="text" placeholder="Enter city name"
+            spellcheck="false">
+            <button><img src="search.png"></button>
         </div>
-        <div id="weather-box" class="weather" style="display: none;">
-            <h2 id="city">London</h2>
-            <h1 id="temp">22°C</h1>
-            <p id="description">Clear Sky</p>
+        <div class="weather">
+            <img src="rain.png" class="Weather Icon">
+            <h2 id="city">India</h2>
+            <h1 id="temp">29°C</h1>
+            <div class="details">
+                <div class="col">
+                    <img src="humidity.png">
+                    <div>
+                        <p class ="humidity">89%</p>
+                        <p> Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="wind.png">
+                    <div>
+                        <p class ="wind"> 18 km/h</p>
+                        <p> Wind Speed</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p id="error" style="display: none; color: red;">City not found!</p>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
